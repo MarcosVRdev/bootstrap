@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar bg-1 fg-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="150" height="50"
+                    class="d-inline-block align-text-top">
+
+            </a>
+        </div>
+    </nav>
+    <div id="carouselExampleDark" class="carousel carousel-overlay slide" data-bs-theme="dark">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="frança.png" class="d-block w-100 rounded-5 image" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="EUA.png" class="d-block w-100 rounded-5 image" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="italia.png" class="d-block w-100 rounded-5 image" alt="...">
+            </div>
+        </div>
+        <div class="carousel-overlay-controls">
+            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button"
+                data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-icon-prev" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button"
+                data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-icon-next" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="cards">
+        <section class="card" style="max-width: 320px">
+            <img src="frança.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">França reforça segurança nas ruas</h4>
+                <p class="card-text">Cerca de 70 mil policiais serão mobilizados no país no fim de semana, depois de
+                    três fins de semana seguidos de protestos liderados por jovens contra a alta de preços e a falta de
+                    perspectivas.</p>
+                <a href="#" class="btn-solid theme-primary">Acessar notícia</a>
+            </div>
+        </section>
+        <section class="card" style="max-width: 320px">
+            <img src="alemanha.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Berlim se prepara para grande ato</h4>
+                <p class="card-text">Comerciantes protegem vitrines com tábuas na capital alemã antes de um protesto de
+                    grande porte marcado para 31/10, parte da onda de manifestações que atravessa a Europa.</p>
+                <a href="#" class="btn-solid theme-primary">Acessar notícia</a>
+            </div>
+        </section>
+        <section class="card" style="max-width: 320px">
+            <img src="italia.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Itália endurece resposta aos atos</h4>
+                <p class="card-text">Depois de confrontos em Milão, o governo enviou 500 soldados à cidade. Nos
+                    protestos de 24/10, a polícia informou 9 presos e 371 detidos, incluindo 110 menores. Os bloqueios
+                    de caminhoneiros no sul do país já foram encerrados.</p>
+                <a href="#" class="btn-solid theme-primary">Acessar notícia</a>
+            </div>
+        </section>
+        <section class="card" style="max-width: 320px">
+            <img src="custos.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Custo de vida une os protestos</h4>
+                <p class="card-text">Moradia, combustível e preços em alta estão na raiz das manifestações de
+                    estudantes, caminhoneiros e agricultores em países europeus, segundo a cobertura da AFP e da Al
+                    Jazeera.</p>
+                <a href="#" class="btn-solid theme-primary">Acessar notícia</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="accordion">
+        <details class="accordion-item" name="accordionExample" open>
+            <summary class="accordion-header">
+                O que é o PortalNoticias?
+                <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m2 5 6 6 6-6" />
+                </svg>
+            </summary>
+            <div class="accordion-body">
+                <p>O PortalNoticias é um portal de notícias com cobertura de política, economia, mundo, tecnologia, esportes e cultura. Nosso objetivo é informar com clareza, rapidez e responsabilidade.</p>
+            </div>
+        </details>
+        <details class="accordion-item" name="accordionExample">
+            <summary class="accordion-header">
+                Com que frequência as notícias são atualizadas?
+                <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m2 5 6 6 6-6" />
+                </svg>
+            </summary>
+            <div class="accordion-body">
+                <p>
+                    O site é atualizado ao longo do dia. Em acontecimentos de grande repercussão, as matérias são atualizadas em tempo real e indicam o horário da última alteração.
+                </p>
+            </div>
+        </details>
+        <details class="accordion-item" name="accordionExample">
+            <summary class="accordion-header">
+                De onde vêm as informações publicadas?
+                <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m2 5 6 6 6-6" />
+                </svg>
+            </summary>
+            <div class="accordion-body">
+                <p>Nossas matérias são baseadas em apuração própria, fontes oficiais, agências de notícias e veículos de referência. Sempre que possível, indicamos a origem da informação no texto.</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Seção Fale conosco -->
+    <section id="fale-conosco" class="fale-conosco py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="text-center mb-4">
+                        <p class="fale-conosco__tag mb-2">PortalNoticias</p>
+                        <h2 class="fale-conosco__titulo mb-2">Fale conosco</h2>
+                        <p class="fale-conosco__subtitulo text-muted mb-0">
+                            Envie sua sugestão, denúncia de erro ou pauta.
+                        </p>
+                    </div>
+
+                    <div class="card border-0 shadow-sm rounded-5">
+                        <div class="card-body p-4 p-md-5">
+                            <form id="form-fale-conosco" novalidate aria-label="Formulário de contato do PortalNoticias">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="nome" class="form-label fw-semibold text-dark">Nome</label>
+                                        <input type="text" class="form-control rounded-4" id="nome" name="nome"
+                                            placeholder="Seu nome completo" aria-required="true" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label fw-semibold text-dark">E-mail</label>
+                                        <input type="email" class="form-control rounded-4" id="email" name="email"
+                                            placeholder="seuemail@exemplo.com" aria-required="true" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="telefone" class="form-label fw-semibold text-dark">Telefone</label>
+                                        <input type="tel" class="form-control rounded-4" id="telefone" name="telefone"
+                                            placeholder="(00) 00000-0000" inputmode="tel" aria-required="false"
+                                            aria-label="Telefone">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="assunto" class="form-label fw-semibold text-dark">Assunto</label>
+                                        <input type="text" class="form-control rounded-4" id="assunto" name="assunto"
+                                            placeholder="Sobre o que você quer falar?" aria-required="false">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="mensagem" class="form-label fw-semibold text-dark">Mensagem</label>
+                                        <textarea class="form-control rounded-4" id="mensagem" name="mensagem" rows="5"
+                                            placeholder="Escreva sua mensagem..." aria-required="true" required></textarea>
+                                    </div>
+
+                                    <div class="col-12 d-flex justify-content-center mt-3">
+                                        <button type="submit" class="btn btn-danger rounded-4 px-4 py-2 fw-semibold">
+                                            Enviar mensagem
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div id="mensagem-sucesso" class="alert alert-success mt-4 rounded-4 d-none" role="alert"
+                                    tabindex="-1" aria-live="polite">
+                                    Mensagem enviada! Responderemos em breve.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim da seção Fale conosco -->
+
+    <script>
+        // Script para validação do formulário de contato do PortalNoticias.
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('form-fale-conosco');
+            const sucesso = document.getElementById('mensagem-sucesso');
+            const campos = form.querySelectorAll('input, textarea');
+            const telefone = document.getElementById('telefone');
+
+            // Aplica máscara para o campo de telefone no padrão (00) 00000-0000.
+            if (telefone) {
+                telefone.addEventListener('input', function () {
+                    let valor = telefone.value.replace(/\D/g, '').slice(0, 11);
+
+                    if (valor.length <= 10) {
+                        valor = valor.replace(/(\d{2})(\d{0,4})(\d{0,4})/, function (_, a, b, c) {
+                            return c ? `(${a}) ${b}-${c}` : b ? `(${a}) ${b}` : `(${a})`;
+                        });
+                    } else {
+                        valor = valor.replace(/(\d{2})(\d{5})(\d{0,4})/, function (_, a, b, c) {
+                            return c ? `(${a}) ${b}-${c}` : `(${a}) ${b}`;
+                        });
+                    }
+
+                    telefone.value = valor;
+                });
+            }
+
+            // Configura mensagens personalizadas em português para os campos inválidos.
+            campos.forEach(function (campo) {
+                campo.addEventListener('invalid', function () {
+                    if (campo.validity.valueMissing) {
+                        campo.setCustomValidity('Este campo é obrigatório.');
+                    } else if (campo.validity.typeMismatch) {
+                        campo.setCustomValidity('Informe um e-mail válido.');
+                    } else {
+                        campo.setCustomValidity('');
+                    }
+                });
+
+                campo.addEventListener('input', function () {
+                    if (campo.checkValidity()) {
+                        campo.classList.remove('is-invalid');
+                        campo.setAttribute('aria-invalid', 'false');
+                    } else {
+                        campo.classList.add('is-invalid');
+                        campo.setAttribute('aria-invalid', 'true');
+                    }
+                });
+
+                campo.addEventListener('blur', function () {
+                    if (!campo.checkValidity()) {
+                        campo.classList.add('is-invalid');
+                        campo.setAttribute('aria-invalid', 'true');
+                    } else {
+                        campo.classList.remove('is-invalid');
+                        campo.setAttribute('aria-invalid', 'false');
+                    }
+                });
+            });
+
+            // Impede o recarregamento da página e mostra a mensagem de sucesso.
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                if (!form.checkValidity()) {
+                    campos.forEach(function (campo) {
+                        if (!campo.checkValidity()) {
+                            campo.classList.add('is-invalid');
+                            campo.setAttribute('aria-invalid', 'true');
+                        }
+                    });
+
+                    form.reportValidity();
+                    return;
+                }
+
+                campos.forEach(function (campo) {
+                    campo.classList.remove('is-invalid');
+                    campo.setAttribute('aria-invalid', 'false');
+                });
+
+                sucesso.classList.remove('d-none');
+                sucesso.focus();
+                form.reset();
+            });
+        });
+    </script>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
